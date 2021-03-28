@@ -1,0 +1,27 @@
+<odoo>
+    <data>
+        <template id="assets_zip_code" name="zip_code" inherit_id="website.assets_frontend">
+            <xpath expr="link[last()]" position="after">
+                <script type="text/javascript" src="https://d79i1fxsrar4t.cloudfront.net/sdk/1.6.2/smartystreets-sdk-1.6.2.js"></script>
+                <script src="https://d79i1fxsrar4t.cloudfront.net/sdk/1.6.2/smartystreets-sdk-1.6.2.min.js"></script>
+                <script src="/zipcode_checks/static/src/js/zip.js"></script>
+
+            </xpath>
+        </template>
+
+
+        <template id="address_inherited"  inherit_id="website_sale.address"  >
+            <xpath expr="//div[@id='wrap']" position="before">
+                <header>
+<!--                <script type="text/javascript" src="/opt/odoo13.1/custom/zipcode_checks/static/src/js/zip.js">-->
+<!---->
+
+<!--                </script>-->
+                </header>
+
+            </xpath>
+        </template>
+
+    </data>
+
+</odoo>

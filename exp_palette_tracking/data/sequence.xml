@@ -1,0 +1,12 @@
+<odoo>
+    <data>
+        <record id="seq_exp_paletee" model="ir.sequence">
+            <field name="name">Exp Palette</field>
+            <field name="code">exp.palette.tracking</field>
+            <field name="prefix">EP</field>
+            <field name="padding">5</field>
+        </record>
+
+    </data>
+
+</odoo>
